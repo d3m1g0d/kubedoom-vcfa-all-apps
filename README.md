@@ -5,9 +5,8 @@ The next level of chaos engineering is here! Kill pods inside your Kubernetes
 cluster by shooting them in Doom!
 
 This enables the deployment of the excellent doom fork 
-[gideonred/dockerdoomd](https://github.com/gideonred/dockerdoomd) on the 
-VMware Cloud Foundation 9 private cloud stack using an all-apps organization 
-with VKS and VPCs.
+[storax/kubedoom](https://github.com/storax/kubedoom) on the VMware Cloud Foundation 9 
+private cloud stack using an all-apps organization with VKS and VPCs.
 
 ![DOOM](assets/doom.png)
 
