@@ -2,10 +2,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: kubedoom
   name: kubedoom
   namespace: kubedoom
+  labels:
+    app: kubedoom
 spec:
   replicas: 1
   selector:
@@ -18,11 +18,11 @@ spec:
     spec:
       serviceAccountName: kubedoom
       containers:
-        - image: ghcr.io/storax/kubedoom:latest
+        - name: kubedoom
+          image: ghcr.io/storax/kubedoom:latest
           env:
             - name: NAMESPACE
-              value: default
-          name: kubedoom
+              value: kubedoom-monsters   # target namespace
           ports:
             - containerPort: 5900
               name: vnc
