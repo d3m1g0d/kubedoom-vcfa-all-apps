@@ -28,9 +28,10 @@ Then run kubedoom inside the cluster by applying the manifest provided in this r
 ```console
 $ kubectl apply -k manifest/
 namespace/kubedoom created
+namespace/kubedoom-monsters created
 serviceaccount/kubedoom created
-clusterrole.rbac.authorization.k8s.io/kubedoom created
-clusterrolebinding.rbac.authorization.k8s.io/kubedoom created
+role.rbac.authorization.k8s.io/kubedoom created
+rolebinding.rbac.authorization.k8s.io/kubedoom created
 service/kubedoom created
 deployment.apps/kubedoom created
 ```
